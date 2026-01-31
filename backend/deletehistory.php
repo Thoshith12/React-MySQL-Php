@@ -24,7 +24,7 @@ if (!empty($historyArr)) {
     $result2 = mysqli_query($conn, $sql);
 
     while ($row = mysqli_fetch_assoc($result2)) {
-        $row['history'] = true;   // 👈 mimic JS: x.history = true
+        $row['history'] = true;  
         $data[] = $row;
     }
 }
@@ -32,4 +32,5 @@ echo json_encode([
     "status" => "success",
     "data" => $data
 ]);
+
 ?>
