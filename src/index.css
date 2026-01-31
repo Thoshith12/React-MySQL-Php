@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,87 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-item {
+  width: 85%;
+  padding: 5px 0 5px 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 0 1rem 0 1rem;
+}
+
+.nav-item:hover {
+  background-color: lightgray;
+}
+
+.nav-item span {
+  width: 80%;
+  padding-left: 15%;
+  font-size: 1rem;
+  font-weight: 450;
+}
+
+hr {
+  width: 100%;
+  margin-bottom: 1px solid lightgrey;
+}
+
+.sidebar {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+
+}
+
+.sidebar:hover::-webkit-scrollbar {
+  width: 4px;
+  height: 90vh;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+.mainSingleVideo {
+  width: 68%;
+}
+
+.singleVideo {
+  margin-top: 1rem;
+}
+
+.sideSingleVideo {
+  margin-left: 2vw;
+  width: 30%;
+}
+
+.recommendImg {
+  width: 40%;
+}
+
+.searchBar .form-control,
+.searchBar .input-group-text {
+  height: 40px;
+}
+
+.singleVideoDescription {
+  max-height: 20vh;
+  overflow: auto;
+}
+
+.singleVideoDescription::-webkit-scrollbar {
+  width: 5px;
+}
+
+.singleVideoDescription::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
 }

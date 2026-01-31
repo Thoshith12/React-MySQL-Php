@@ -1,0 +1,17 @@
+.searchBar {
+  max-width: 600px;
+  flex: 1;
+  overflow: hidden ;  
+}
+
+.yt-search input {
+  border-radius: 999px 0 0 999px;
+}
+
+.searchBar input:focus {
+  box-shadow: none;
+  border-color: rgb(228, 222, 222);
+  padding-left: 15px;
+  outline: none;
+}
+
